@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Elite Trainer Box",
+    "limit": 2400,
+    "priority": 100,
+    "aliases": [
+      "elite trainer box",
+      "etb"
+    ]
+  }
+]

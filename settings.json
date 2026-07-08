@@ -1,0 +1,6 @@
+{
+    "check_interval": 10,
+    "headless": false,
+    "max_seen": 5000,
+    "log_enabled": true
+}
