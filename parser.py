@@ -40,6 +40,13 @@ def parse_items(html):
         if not title:
             title = product.get_text(" ", strip=True).lower()
 
+        # DEBUG
+        print("")
+        print("========================================")
+        print("PARSER TITLE:")
+        print(title)
+        print("========================================")
+
         # Cena
         price = None
 

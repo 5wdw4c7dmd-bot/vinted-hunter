@@ -167,6 +167,8 @@ PRODUCTS = [
             "collection premium",
             "mega evolution",
             "mega heroes",
+            "kolekcja",
+            "kolekcja pokemon"
         ],
         "limit": 1800,
         "priority": 90,
@@ -178,6 +180,7 @@ PRODUCTS = [
             "mini tin",
             "mini collector tin",
             "mini collector",
+            "mini puszka",
         ],
         "limit": 900,
         "priority": 70,
@@ -192,6 +195,8 @@ PRODUCTS = [
             "hidden potential tin",
             "pokeball tin",
             "poke ball tin",
+            "puszka",
+            "pokemon puszka"
         ],
         "limit": 800,
         "priority": 70,
@@ -323,7 +328,6 @@ BLOCKED_WORDS = [
 
     # Card types
     "energy",
-    "trainer",
     "supporter",
 
     # Bulk
@@ -370,4 +374,35 @@ BLOCKED_WORDS = [
     "pokemon go account",
     "konto pokemon go",
 
+    # Empty tins / empty boxes
+
+    "empty tin",
+    "empty mini tin",
+    "tin only",
+    "mini tin only",
+
+    "prázdný tin",
+    "prázdný mini tin",
+    "prázdná plechovka",
+    "jen tin",
+    "pouze tin",
+    "bez obsahu",
+
+    "pusta puszka",
+    "puszka po",
+    "pusta puszeczka",
+    "puste pudełko",
+    "same pudełko",
+    "sam box",
+    "box bez kart",
+    "bez zawartości",
+    "bez zawartosci",
+
+    "same opakowanie",
+    "opakowanie po",
+    "opakowanie",
+
+    "without boosters",
+    "no boosters",
+    "bez boostera",
 ]

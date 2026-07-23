@@ -8,6 +8,7 @@ from notifier import send
 from filters import check_item
 from score import calculate_score
 from logger import log
+from history import add_history
 
 from status import status
 
@@ -101,6 +102,9 @@ while True:
                 ):
                     title = "💎💎💎 JACKPOT 💎💎💎"
 
+                elif result["product"] == "UNKNOWN PRODUCT":
+                    title = "⚠️ UNKNOWN PRODUCT"
+
                 elif score >= 250:
                     title = "🚨🚨 TOP DEAL"
 
@@ -178,6 +182,12 @@ while True:
                 send(
                     message,
                     item["image"],
+                )
+
+                add_history(
+                    result,
+                    item,
+                    score,
                 )
 
                 alerts += 1

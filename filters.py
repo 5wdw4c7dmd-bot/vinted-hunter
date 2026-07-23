@@ -38,6 +38,23 @@ def check_item(item):
 
     if product is None:
 
+        # Podezřelý Pokémon produkt
+        if (
+            "pokemon" in text
+            and 300 <= item["price"] <= 2000
+        ):
+
+            result["ok"] = True
+            result["reason"] = "Neznámý Pokémon produkt"
+            result["product"] = "UNKNOWN PRODUCT"
+            result["matched_alias"] = "-"
+            result["limit"] = 2000
+            result["priority"] = 10
+            result["set"] = None
+            result["favorite"] = False
+
+            return result
+
         result["reason"] = "Produkt není podporovaný"
         return result
 
